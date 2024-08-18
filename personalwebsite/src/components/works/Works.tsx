@@ -5,6 +5,7 @@ import { getWorksData } from "@/utils/getWorksData";
 const Works = () => {
   const { id, title, workItems, buttonText } = getWorksData();
   console.log("testing...");
+  console.log("testing...");
 
   return (
     <div key={id} className={styles.worksWrapper} id={"works"}>

@@ -11,16 +11,16 @@ export const getHeaderdata = (): THeaderData => {
     id: generateUUID(),
     navbarLogo: {
       id: generateUUID(),
-      url: "/assets/images/header/navbarLogo.png",
+      url: "/assets/images/header/rishavrajCircle.png",
       altTag: "navabar logo",
       width: 100,
       height: 100,
     },
     navbarItems: [
-      createNavbarItem("Home", "/"),
-      createNavbarItem("More about me", "/more-about-me"),
-      createNavbarItem("Work demo", "/work-demo"),
-      createNavbarItem("Tech articles", "/tech-articles"),
+      createNavbarItem("About", "/about"),
+      createNavbarItem("Works", "/works"),
+      createNavbarItem("Articles", "/articles"),
+      createNavbarItem("Contact", "/contact"),
     ],
   };
   return data;

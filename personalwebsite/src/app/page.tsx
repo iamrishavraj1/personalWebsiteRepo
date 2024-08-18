@@ -1,12 +1,13 @@
-import Header from "@/components/header/Header";
 import React from "react";
+import styles from "./page.module.css";
+import Home from "@/components/home/Home";
 
-const Home = async () => {
+const Page = async () => {
   return (
-    <div>
-      <Header />
+    <div className={styles.pageWrapper}>
+      <Home />
     </div>
   );
 };
 
-export default Home;
+export default Page;

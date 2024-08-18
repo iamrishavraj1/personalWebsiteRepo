@@ -1,0 +1,31 @@
+.infiniteCarouselWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  width: 200%;
+  animation: scroll var(--carousel-speed) linear infinite;
+}
+
+.carouselItemWrapper {
+  flex: 0 0 auto;
+}
+
+.carouselItem {
+  white-space: nowrap;
+  will-change: transform;
+  padding-inline: 2rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}

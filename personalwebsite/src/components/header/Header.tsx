@@ -6,6 +6,23 @@ import { getHeaderdata } from "@/utils/getHeaderData";
 
 const Header = () => {
   const { id, navbarLogo, navbarItems }: THeaderData = getHeaderdata();
+
+  const handleScroll = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    sectionId: string
+  ) => {
+    event.preventDefault();
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   return (
     <nav key={id} className={styles.navbarWrapper}>
       <div className={styles.navbarLogoContainer}>
@@ -22,9 +39,16 @@ const Header = () => {
 
       <div className={styles.navbarItemsWrapper}>
         <div className={styles.navbarItems}>
-          {navbarItems.map((navbarItem: TNavbarItems) => {
-            return <div key={navbarItem.id}>{navbarItem.name}</div>;
-          })}
+          {navbarItems.map((navbarItem: TNavbarItems) => (
+            <div
+              key={navbarItem.id}
+              className={styles.navbarItem}
+              onClick={(event) =>
+                handleScroll(event, navbarItem.url.replace("/", ""))
+              }>
+              {navbarItem.name}
+            </div>
+          ))}
         </div>
       </div>
     </nav>

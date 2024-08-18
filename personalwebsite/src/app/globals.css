@@ -1,0 +1,52 @@
+/* Light Mode */
+:root {
+  --background-color: #fcfcf7;
+  --primary-color: #0077b5;
+  --secondary-color: #f4f1f8;
+  --accent-color: #0073b1;
+  --text-color: #333333;
+  --link-color: #0077b5;
+  --border-color: #e1e9ee;
+  --navbarHeightMobile: 56px;
+  --carousel-speed: 35s;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --background-color: #1b1f23;
+  --primary-color: #0077b5;
+  --secondary-color: #2e3a43;
+  --accent-color: #0091d5;
+  --text-color: #e1e9ee;
+  --link-color: #0091d5;
+  --border-color: #2c3338;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.border {
+  border-color: var(--border-color);
+}
+
+::-webkit-scrollbar {
+  width: none;
+  background: transparent;
+}

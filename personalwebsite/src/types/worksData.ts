@@ -6,8 +6,9 @@ export type TWorksData = {
 };
 
 export type TWorkItems = {
+  [x: string]: string | undefined;
   id: string;
-  title: string;
+  company: string;
   subtitle: string;
   date: string;
   role: string;

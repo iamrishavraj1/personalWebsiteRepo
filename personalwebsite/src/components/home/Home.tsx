@@ -15,10 +15,7 @@ const Home: React.FC = () => {
 
   return (
     <div className={styles.homeWrapper}>
-      <Header />
-      <About />
-      <Works />
-      {/* {isSplashVisible ? (
+      {isSplashVisible ? (
         <SplashScreen onAnimationEnd={handleSplashAnimationEnd} />
       ) : (
         <>
@@ -26,7 +23,7 @@ const Home: React.FC = () => {
           <About />
           <Works />
         </>
-      )} */}
+      )}
     </div>
   );
 };

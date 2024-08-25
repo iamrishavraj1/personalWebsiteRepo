@@ -38,8 +38,31 @@ body {
   color: var(--text-color);
 }
 
-a {
+p {
+  margin: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  background: none;
+  border: none;
+  text-decoration: none;
   color: var(--link-color);
+  background-color: transparent;
+}
+
+button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 .border {

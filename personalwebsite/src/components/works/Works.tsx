@@ -79,6 +79,7 @@ import React from "react";
 import styles from "./Works.module.css";
 import { getWorksData } from "@/utils/getWorksData";
 import Image from "next/image";
+import Link from "next/link";
 
 const Works = () => {
   const { id, title, workItems, buttonText } = getWorksData();
@@ -97,12 +98,13 @@ const Works = () => {
                 <span>Role: {item.role}</span>
                 <span>Date: {item.date}</span>
               </div>
-              <a
+              <Link
+                className={styles.previewLinkBtn}
                 href={item.previewLink}
                 target="_blank"
                 rel="noopener noreferrer">
-                {buttonText}
-              </a>
+                <button>{buttonText}</button>
+              </Link>
             </div>
             <div className={styles.workImageCon}>
               <Image

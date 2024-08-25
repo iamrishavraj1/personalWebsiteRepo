@@ -11,7 +11,7 @@ export const getHeaderdata = (): THeaderData => {
     id: generateUUID(),
     navbarLogo: {
       id: generateUUID(),
-      url: "/assets/images/header/rishavrajCircle.png",
+      url: "/assets/images/header/rishavrajme.png",
       altTag: "navabar logo",
       width: 100,
       height: 100,

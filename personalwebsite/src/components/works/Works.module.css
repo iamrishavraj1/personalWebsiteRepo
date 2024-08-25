@@ -83,8 +83,17 @@
   width: 80px;
   border: none;
 }
+.previewLinkBtn button {
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  white-space: nowrap;
+}
 
 @media (min-width: 768px) {
+  .worksWrapper {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
   .workItem {
     flex-direction: row;
   }

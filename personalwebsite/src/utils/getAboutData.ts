@@ -4,7 +4,7 @@ import { TAboutData } from "@/types/aboutData";
 export const getAboutData = (): TAboutData => {
   const data = {
     id: generateUUID(),
-    title: `I’m Rishav Raj.`,
+    title: `Hello, I’m Rishav Raj.`,
     subtitle: `
         Crafting innovative software engineering solutions with a commitment to 
         seamless integration and scalability,

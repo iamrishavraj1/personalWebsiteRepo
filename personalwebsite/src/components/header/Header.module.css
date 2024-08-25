@@ -9,9 +9,6 @@
   border: 1px solid var(--border-color);
   background-color: var(--background-color);
   z-index: 2;
-  /* background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
 }
 
 .navbarLogoImg {
@@ -31,6 +28,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.navbarItem {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

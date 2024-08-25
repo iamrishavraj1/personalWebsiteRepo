@@ -10,9 +10,12 @@ const About = () => {
   return (
     <div key={id} className={`${styles.aboutWrapper} ${styles.stickyWrapper}`}>
       <div className={styles.aboutBody}>
-        <h1 className={styles.aboutTitle}>{title}</h1>
-        <p className={styles.aboutSubtitle}>{subtitle}</p>
+        <h1 className={styles.aboutTitle}>INNOVATIVE SOFTWARE ENGINEER</h1>
+        <h1 className={styles.aboutTitle}>
+          INDIA<span className={styles.aboutStar}>*</span>
+        </h1>
       </div>
+
       <div className={styles.carouselWrapper}>
         <InfiniteCarousel carouselItems={carouselItems} />
       </div>

@@ -10,6 +10,7 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .aboutBody {
@@ -19,10 +20,13 @@
 }
 
 .aboutTitle {
-  font-size: clamp(2.5rem, 6vw, 8rem);
+  font-size: clamp(3rem, 6vw, 8rem);
   font-weight: 500;
   line-height: 1.1;
   margin: 0;
+}
+.aboutStar {
+  font-family: Unna;
 }
 
 .aboutSubtitle {

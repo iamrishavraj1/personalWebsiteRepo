@@ -1,6 +1,7 @@
 /* Light Mode */
 :root {
-  --background-color: #fcfcf7;
+  --background-color-two: #fcfcf7;
+  --background-color: #fcfafd;
   --primary-color: #0077b5;
   --secondary-color: #f4f1f8;
   --accent-color: #0073b1;
@@ -34,7 +35,7 @@ body {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-two);
   color: var(--text-color);
 }
 

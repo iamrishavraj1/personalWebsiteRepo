@@ -11,7 +11,7 @@
   min-width: 70%;
   margin-inline: auto;
   bottom: 10px;
-  border: 1px solid rgb(230, 230, 230);
+  border: 1px solid var(--border-color);
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
   padding: 10px 20px;

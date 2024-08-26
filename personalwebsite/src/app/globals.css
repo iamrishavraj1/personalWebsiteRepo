@@ -1,6 +1,6 @@
 /* Light Mode */
 :root {
-  --background-color-two: #fcfcf7;
+  /* --background-color-two: #fcfcf7;
   --background-color: #fcfafd;
   --primary-color: #0077b5;
   --secondary-color: #f4f1f8;
@@ -8,6 +8,16 @@
   --text-color: #333333;
   --link-color: #0077b5;
   --border-color: #e1e9ee;
+  --navbarHeightMobile: 56px;
+  --carousel-speed: 35s; */
+  --background-color-two: #fdfdfd;
+  --background-color: #ffffff;
+  --primary-color: #0077b5;
+  --secondary-color: #f0f0f0;
+  --accent-color: #005f99;
+  --text-color: #333333;
+  --link-color: #0077b5;
+  --border-color: #e6e6e6;
   --navbarHeightMobile: 56px;
   --carousel-speed: 35s;
 }

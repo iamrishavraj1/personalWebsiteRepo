@@ -4,7 +4,6 @@ import styles from "./AboutSlider.module.css";
 
 const AboutSlider = ({
   isVisible,
-  onClose,
 }: {
   isVisible: boolean;
   onClose: () => void;

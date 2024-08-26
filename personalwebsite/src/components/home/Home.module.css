@@ -4,3 +4,27 @@
   position: sticky;
   top: 0;
 }
+
+.screensWrapper {
+  background-color: var(--background-color-two);
+  color: var(--text-color);
+  position: relative;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 30px;
+  box-shadow: rgba(26, 29, 43, 0.15) 0px 22px 80px;
+  border: 1px solid var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .screensWrapper {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+}

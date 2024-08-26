@@ -79,10 +79,10 @@ import Image from "next/image";
 import { THeaderData, TNavbarItems } from "@/types/headerData";
 import { getHeaderdata } from "@/utils/getHeaderData";
 import AboutSlider from "../about/aboutSlider/AboutSlider";
-import { FaDev, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import icons
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 
 const Header = () => {
-  const { id, navbarLogo, navbarItems }: THeaderData = getHeaderdata();
+  const { navbarLogo, navbarItems }: THeaderData = getHeaderdata();
   const [showSlider, setShowSlider] = useState(false);
 
   const handleScroll = (

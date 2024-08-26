@@ -4,14 +4,8 @@ import { TAboutData } from "@/types/aboutData";
 export const getAboutData = (): TAboutData => {
   const data = {
     id: generateUUID(),
-    title: `Hello, I’m Rishav Raj.`,
-    subtitle: `
-        Crafting innovative software engineering solutions with a commitment to 
-        seamless integration and scalability,
-        I bring ideas to life from concept to completion,
-        ensuring each detail is meticulously executed for a 
-        refined and impactful digital experience.
-      `,
+    title: `INNOVATIVE SOFTWARE ENGINEER`,
+    subtitle: `INDIA`,
     carouselItems: [
       "2+ years of experience",
       "Based in Gurgaon, Haryana, India",

@@ -1,16 +1,8 @@
 .worksWrapper {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  position: relative;
-  top: 0;
-  z-index: 1;
-  overflow: hidden;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-block: 30px;
 }
 
 .worksWrapper h1 {
@@ -89,11 +81,6 @@
 }
 
 @media (min-width: 768px) {
-  .worksWrapper {
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-  }
-
   .workItem {
     flex-direction: row;
   }

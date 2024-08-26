@@ -21,7 +21,9 @@ const Home: React.FC = () => {
         <>
           <Header />
           <About />
-          <Works />
+          <div className={styles.screensWrapper}>
+            <Works />
+          </div>
         </>
       )}
     </div>
